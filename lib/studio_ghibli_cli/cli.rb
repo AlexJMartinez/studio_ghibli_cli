@@ -8,6 +8,11 @@ class StudioGhibliCli::CLI
     StudioGhibliCli::Film.all.each do |film|
       puts film.title 
     end 
+    menu
   end 
+  
+  def menu
+    
+  end
      
 end
