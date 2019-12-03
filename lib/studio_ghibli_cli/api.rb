@@ -8,17 +8,14 @@ class StudioGhibliCli::API
     response = HTTParty.get(url)
     
     response.each do |film|
-      binding.pry
+      
       title = film["title"]
       description = film["description"]
       director = film["director"]
       release_date = film["release_date"]
       rt_score = film["rt_score"]
-      
-    #   StudioGhibliCli::Film.new(title, description, director, release_date, rt_score)
-    
+      #binding.pry
+    StudioGhibliCli::Film.new(title, description, director, release_date, rt_score)
      end
   end
-  
-  
 end

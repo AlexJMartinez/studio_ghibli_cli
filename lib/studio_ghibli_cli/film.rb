@@ -4,7 +4,7 @@ class StudioGhibliCli::Film
   
   @@all = []
   
-  def initialize(title:, description:, director:, release_date:, rt_score:)
+  def initialize(title, description, director, release_date, rt_score)
     @title = title
     @description = description
     @director = director

@@ -1,3 +1,4 @@
+require 'pry'
 require 'httparty'
 
 class StudioGhibliCli::CLI 
@@ -5,9 +6,8 @@ class StudioGhibliCli::CLI
   def start
     StudioGhibliCli::API.new.fetch
     StudioGhibliCli::Film.all.each do |film|
-      puts Film.title 
+      puts film.title 
     end 
   end 
-    
      
 end
