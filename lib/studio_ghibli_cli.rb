@@ -1,6 +1,8 @@
-require "studio_ghibli_cli/version"
+require 'pry'
+require 'httparty'
 
-module StudioGhibliCli
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require "studio_ghibli_cli/version"
+require "studio_ghibli_cli/cli"
+require "studio_ghibli_cli/api"
+require "studio_ghibli_cli/film"
+
