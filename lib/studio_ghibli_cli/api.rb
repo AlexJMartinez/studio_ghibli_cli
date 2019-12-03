@@ -14,7 +14,7 @@ class StudioGhibliCli::API
       director = film["director"]
       release_date = film["release_date"]
       rt_score = film["rt_score"]
-      binding.pry
+      #binding.pry
     StudioGhibliCli::Film.new(title, description, director, release_date, rt_score)
      end
   end

@@ -5,18 +5,31 @@ class StudioGhibliCli::CLI
   
   def start
     StudioGhibliCli::API.new.fetch
-    StudioGhibliCli::Film.all.each do |film|
+    
+    greeting
+    list
+    menu
+  end 
+    
+  def greeting
+      puts "\nWelcome anime fans!"
+      sleep(0.5)
+  end
+    
+   
+  def list 
+    puts "\nHere's a list of all Studio Ghibli films."
+    sleep(0.5)
+    
+     StudioGhibliCli::Film.all.each do |film|
       puts film.title
       sleep(0.2)
-    end 
-    
-    menu
+    end
+  end
+  
+  def menu
     
   end 
-  
-  def list 
-    
-  end
   
   
   def goodbye
