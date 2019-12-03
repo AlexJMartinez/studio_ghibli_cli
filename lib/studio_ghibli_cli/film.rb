@@ -14,6 +14,8 @@ class StudioGhibliCli::Film
     @@all << self
   end
   
+  #find_by_name method
+  
   def self.all
     @@all
   end
