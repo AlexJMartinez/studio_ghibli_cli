@@ -6,19 +6,18 @@ class StudioGhibliCli::API
   def fetch 
     url = "https://ghibliapi.herokuapp.com/films"
     response = HTTParty.get(url)
-    # binding.pry
     
-    # response["results"]["movies"].each do |film|
-    #   title = film["title"]
-    #   year = film["year"]
-    #   genre = film["genre"]
-    #   director = film["director"]
-    #   actors = film["actors"]
-    #   plot = film["plot"]
+    response.each do |film|
+      binding.pry
+      title = film["title"]
+      description = film["description"]
+      director = film["director"]
+      release_date = film["release_date"]
+      rt_score = film["rt_score"]
       
-    #   StudioGhibliCli::Film.new(title, year, genre, director, actors, plot)
+    #   StudioGhibliCli::Film.new(title, description, director, release_date, rt_score)
     
-    # end
+     end
   end
   
   

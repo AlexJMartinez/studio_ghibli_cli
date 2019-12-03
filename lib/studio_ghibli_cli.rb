@@ -1,8 +1,8 @@
 require 'pry'
 require 'httparty'
 
-require "studio_ghibli_cli/version"
-require "studio_ghibli_cli/cli"
-require "studio_ghibli_cli/api"
-require "studio_ghibli_cli/film"
+require_relative "./studio_ghibli_cli/version"
+require_relative "./studio_ghibli_cli/cli"
+require_relative "./studio_ghibli_cli/api"
+require_relative "./studio_ghibli_cli/film"
 

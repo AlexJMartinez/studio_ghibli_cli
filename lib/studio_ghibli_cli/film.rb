@@ -1,16 +1,16 @@
 class StudioGhibliCli::Film
   
-  attr_accesor :title, :year, :genre, :director, :actors, :plot 
+  attr_accessor :title, :description, :director, :release_date, :rt_score
   
   @@all = []
   
-  def initialize(title:, year:, genre:, director:, actors:, plot:)
+  def initialize(title:, description:, director:, release_date:, rt_score:)
     @title = title
-    @year = year
-    @genre = genre
+    @description = description
     @director = director
-    @actors = actors
-    @plot = plot
+    @release_date = release_date
+    @rt_score = rt_score
+    
     @@all << self
   end
   
