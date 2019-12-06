@@ -73,7 +73,7 @@ class StudioGhibliCli::CLI
   
   
   def goodbye
-    puts "thanks for checking out these studio ghibli films!".upcase
+    puts "\nthanks for checking out these studio ghibli films!\n".upcase
     sleep(2)
   end
     
