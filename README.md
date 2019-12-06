@@ -1,6 +1,6 @@
 # StudioGhibliCli
 
-This gem is a CLI project and simple demonstration of OOP and utilizing either an API or Scraper to pull information from the internet for use in my program. This particular gem is intended to list off all Studio Ghibli films and provide you with the option to view further details about that film. My code is written in an abstract manner so that if Studio Ghibli were to make more films or if the site I pulled information from is updated my program won't break.
+This gem is a CLI project and simple demonstration of OOP utilizing either an API or Scraper to pull information from the internet for use in my program. This particular gem is intended to list off all Studio Ghibli films and provide you with the option to view further details about that film. My code is written in an abstract manner so that if Studio Ghibli were to make more films or if the site I pulled information from is updated my program won't break.
 
 ## Installation
 
@@ -30,7 +30,7 @@ $ bundle install
 
 Once your bundle install is complete and while you are in the studio_ghibli_cli directory type the following into your terminal to run the program:
 
-./bin/ghibli-run
+$ ./bin/ghibli-run
 
 You will be greeted, and given a numbered list of all Studio Ghibli films followed by the following options:
 
