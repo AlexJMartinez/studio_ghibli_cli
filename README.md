@@ -1,8 +1,6 @@
 # StudioGhibliCli
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/studio_ghibli_cli`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem is a CLI project and simple demonstration of OOP and utilizing either an API or Scraper to pull information from the internet for use in my program. This particular gem is intended to list off all Studio Ghibli films and provide you with the option to view further details about that film. My code is written in an abstract manner so that if Studio Ghibli were to make more films or if the site I pulled information from is updated my program won't break.
 
 ## Installation
 
@@ -22,7 +20,28 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You can access the program by cloning the repo, opening in an editor and then moving into the main directory:
+
+$ cd studio_ghibli_cli
+
+Once you are in the correct directory for the program you'll want to do a bundle install to make sure all of the programs dependencies are up and running so that you are able to run the program:
+
+$ bundle install
+
+Once your bundle install is complete and while you are in the studio_ghibli_cli directory type the following into your terminal to run the program:
+
+./bin/ghibli-run
+
+You will be greeted, and given a numbered list of all Studio Ghibli films followed by the following options:
+
+"Input a number from the list of films to view it's details."
+
+"Type 'list' to view the full list again."
+
+"Or, if you'd like to exit, type 'exit'"
+
+
+From this point you can find out some main details about any of these films or if you are finished you can exit the program. 
 
 ## Development
 
@@ -32,7 +51,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/'distributed-delimiter-4097'/studio_ghibli_cli. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/AlexJMartinez/studio_ghibli_cli. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
